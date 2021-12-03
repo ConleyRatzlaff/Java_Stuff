@@ -7,37 +7,25 @@ Tu Th 3:30
 import java.util.Arrays;
 
 public class Main{
-  int[] number = new int[20];
-  public void getRandom(){
-  //sets length of number array to 20
 
-  //generates 20 random numbers and stores them into number array
-  for(int i = 0; i < number.length; i++){
-    number[i] = (int)(Math.random()*30 + 1);
+  /*  static int checkArray(){
 
-  }
-  //prints the contents of array
-  System.out.println(Arrays.toString(number));
-  }
-
-  /*static void checkArray(){
-    int x = number[]
-    for (int i= 0; i < number.length; i++){
-      if ( x == number[i]){
-        getRandom();
-        checkArray();
-      }else{
-        return x;
-    }
+    Im going to be honest ive been trying to figure out how to make
+    a method to check my array for duplicates but couldnt figure it out.
 
 
-  }
-}
-*/
+
+  }*/
+
 
   public static void main(String[] args) {
-  getRandom();
-  //checkArray();
-  System.out.println(Arrays.toString(number));
+    int[] number = new int[20];
+    for (int i = 0; i < number.length; i++){
+      number[i] = (int) (Math.random()* 30 + 1);
+    }
+    System.out.println(Arrays.toString(number));
   }
+
+
+
 }
