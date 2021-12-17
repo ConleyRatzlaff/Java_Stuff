@@ -11,10 +11,11 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		//creates scanner object
 		Scanner scan = new Scanner(System.in);
 		
 	
-		
+		//asks for input for month
 		System.out.println("Enter the month # you were born:");
 		int month = scan.nextInt();
 		
@@ -24,10 +25,11 @@ public class Main {
 			month = scan.nextInt();
 		}
 		
-		
+		//asks for input for day
 		System.out.println("Enter the day you were born:");
 		int day = scan.nextInt();
 		
+		//asks for input for year
 		System.out.println("Enter the year you were born:");
 		int year = scan.nextInt();
 	
@@ -42,6 +44,7 @@ public class Main {
 		System.out.println("Your birthdate is: " + birthDate);
 		System.out.println("That makes you: " + age);
 		
+		//switch to print info depending on the month 
 		switch(month) {
 		case 1:
 			System.out.println("You were born in January and your birthstone is Garnet");
